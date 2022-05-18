@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinema Bilet Rezervasyon Uygulamasi</title>
+    <!-- CSS dosyasinin HTML sayfasi uzerinde tanimlanmasi -->
+    <link rel="stylesheet" href="/CSS/style.css">  
+</head>
+<body>
+    
+
+    <!-- Yapinin iskeleti olusturuldu -->
+    <div class="container">
+        <!-- Birinci siranin olusturulmasi -->
+        <div class="row">
+            <!-- Koltuklarin olusturulmasi -->
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <!-- Ikinci siranin olusturulmasi -->
+        <div class="row">
+            <!-- Koltuklarin olusturulmasi -->
+            <div class="seat"></div>
+            <div class="seat reserved"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <!-- Ucuncu siranin olusturulmasi -->
+        <div class="row">
+            <!-- Koltuklarin olusturulmasi -->
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <!-- Dorduncu siranin olusturulmasi -->
+        <div class="row">
+            <!-- Koltuklarin olusturulmasi -->
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat reserved"></div>
+            <div class="seat"></div>
+            <div class="seat reserved"></div>
+            <div class="seat"></div>
+        </div>
+        <!-- Besinci siranin olusturulmasi -->
+        <div class="row">
+            <!-- Koltuklarin olusturulmasi -->
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <!-- Altinci siranin olusturulmasi -->
+        <div class="row">
+            <!-- Koltuklarin olusturulmasi -->
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat reserved" ></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat reserved"></div>
+        </div>
+        <!-- Yedinci siranin olusturulmasi -->
+        <div class="row">
+            <!-- Koltuklarin olusturulmasi -->
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+        <!-- Sekizinci siranin olusturulmasi -->
+        <div class="row">
+            <!-- Koltuklarin olusturulmasi -->
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+
+    </div>
+    <!-- Perdenin olusturulmasi -->
+    <div class="curtain"></div>
+
+     <!-- Koltuk renklerinin anlamlarinin gosterilmesi -->
+     <div class="info">
+        <li>
+            <div class="seat selected"></div>
+            <span>Secili</span>
+        </li>
+        <li>
+            <div class="seat"></div>
+            <span>Bos</span>
+        </li>
+        <li>
+            <div class="seat reserved" ></div>
+            <span>Dolu</span>
+        </li>
+    </div>
+
+    <!-- Film secim listesi olusturma -->
+    <div class="movie-list">
+        <select name="" id="movie">
+            <option value="30" selected disabled>Film Seciniz</option>
+            <option value="30">movie 1</option>
+            <option value="30">movie 2</option>
+            <option value="30">movie 3</option>
+            <option value="30">movie 4</option>
+            <option value="30">movie 5</option>
+            <option value="30">movie 6</option>
+        </select>
+
+        <div class="total">
+            <div class="quantity">
+                <label for="quantity">Bilet Sayisi : </label>
+                <label for="quantity" id="quantity">0</label>
+            </div>
+    
+            <div class="money"> 
+                <label for="money">Bilet Fiyati : </label>
+                <label for="money" id="money">0</label>
+            </div>
+    
+            <div class="paid"> 
+                <label for="paid">Odenecek Tutar : </label>
+                <label for="paid" id="paid">0</label>
+            </div>
+        </div>
+        
+    </div>
+
+    
+   
+
+  
+
+    
+
+
+    <!-- JS dosyasinin HTML sayfasi uzerinde tanimlanmasi -->
+    <script src="/JS/script.js"></script>
+</body>
+</html>
